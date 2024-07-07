@@ -1,0 +1,9 @@
+services:
+  prominence2rpg:
+    image: itzg/minecraft-server
+    ports:
+      - 25565:25565
+    env_file:
+      - .env
+    volumes:
+      - ./p2-data:/data
