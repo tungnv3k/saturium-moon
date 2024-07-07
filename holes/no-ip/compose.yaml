@@ -1,0 +1,5 @@
+services:
+  noip:
+    image: ghcr.io/noipcom/noip-duc:latest
+    env_file:
+      - .env
