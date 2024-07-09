@@ -1,5 +1,6 @@
 services:
   prominence2rpg:
+    restart: always
     image: itzg/minecraft-server
     ports:
       - 25565:25565

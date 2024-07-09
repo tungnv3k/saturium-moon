@@ -1,5 +1,6 @@
 services:
   noip:
+    restart: always
     image: ghcr.io/noipcom/noip-duc:latest
     env_file:
       - .env
