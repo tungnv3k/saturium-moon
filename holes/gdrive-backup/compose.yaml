@@ -1,0 +1,7 @@
+services:
+  gdrive-backup:
+    image: gdrive-backup:latest
+    env_file:
+      - .env
+    volumes:
+      - ${SYNC_FOLDER}:/backup
