@@ -8,3 +8,5 @@ services:
       - .env
     volumes:
       - ./p2-data:/data
+      - /etc/localtime:/etc/localtime:ro
+      - /etc/timezone:/etc/timezone:ro

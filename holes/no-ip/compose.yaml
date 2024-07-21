@@ -4,3 +4,6 @@ services:
     image: ghcr.io/noipcom/noip-duc:latest
     env_file:
       - .env
+    volumes:
+      - /etc/localtime:/etc/localtime:ro
+      - /etc/timezone:/etc/timezone:ro
