@@ -1,5 +1,6 @@
 services:
   gdrive-backup:
+    restart: always
     image: gdrive-backup:latest
     env_file:
       - .env
