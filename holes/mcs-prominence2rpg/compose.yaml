@@ -1,12 +1,12 @@
 services:
   prominence2rpg:
     restart: always
-    image: itzg/minecraft-server
+    image: p2rpg
     ports:
       - 25565:25565
     env_file:
       - .env
     volumes:
-      - ./p2-data:/data
+      - ./server:/data
       - /etc/localtime:/etc/localtime:ro
       - /etc/timezone:/etc/timezone:ro
